@@ -1,0 +1,11 @@
+{
+  "supportsES6": true,
+  "withInterfaces": true,
+  "withSeparateModelsAndApi": true,
+  "apiPackage": "api",
+  "modelPackage": "model",
+  "modelPropertyNaming": "camelCase",
+  "typeMappings": {
+    "set": "Array"
+  }
+}

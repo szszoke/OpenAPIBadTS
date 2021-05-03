@@ -1,0 +1,11 @@
+.gitignore
+.npmignore
+api.ts
+api/weather-forecast-api.ts
+base.ts
+common.ts
+configuration.ts
+git_push.sh
+index.ts
+model/index.ts
+model/query-response.ts

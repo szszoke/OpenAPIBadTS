@@ -1,0 +1,19 @@
+{
+  "name": "openapibadts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "make-openapi-definiton": "dotnet swagger tofile --output swagger.json bin/Debug/net5.0/OpenAPIBadTS.dll v1",
+    "generate": "openapi-generator-cli generate -o web_client -i swagger.json -g typescript-axios -c config.json",
+    "build": "tsc",
+    "trigger-bug": "npm run make-openapi-definiton && npm run generate && npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@openapitools/openapi-generator-cli": "^2.2.6",
+    "axios": "^0.21.1",
+    "typescript": "^4.2.4"
+  }
+}
